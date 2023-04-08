@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>AP&Me</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="titlelogo.png">
+</head> 
+
+<body>
+  <div class="headerContainer">
+    <header>
+        <ul>
+          <li>
+            <img class="logo" src="webLogo.png" height="150px">
+          </li>
+            <li><a href="/index">Dashboard</a></li>
+            <li><a href="/flashcards">Flashcards</a></li>
+            <li><a href="/to-do">To-Do</a></li>
+            <li><a href="/classes">Classes</a></li>
+            <li><a href="/resources" class="active">Resources</a></li>
+        </ul>
+    </header>
+    <div class="title">
+      <h1 id="text">Resources for:</h1>
+    </div>
+  </div>
+</body>
+<script>
+
+
+  const classesValue = localStorage.getItem('classes');
+  document.getElementById("text").innerHTML = "Resources for: " + classesValue;
+
+  const test = [localStorage.getItem('classes')];
+  for (let i = 0; i < test.length; i++) {
+      console.log(test[i]);
+      addElement(test[i]);
+  }
+
+  function addElement(string) {
+  // create a new div element
+  const newDiv = document.createElement("div");
+  newDiv.className = "container";
+
+
+  // add the newly created element and its content into the DOM
+  const currentDiv = document.getElementById("div1");
+  document.body.insertBefore(newDiv, currentDiv);
+
+  const image = document.createElement("img");
+  newDiv.appendChild(image);
+
+  const description = document.createElement("p");
+    //second resource
+  const newDiv2 = document.createElement("div");
+  newDiv2.className = "container";
+
+  const currentDiv2 = document.getElementById("div");
+  document.body.insertBefore(newDiv2, currentDiv2);
+
+  const image2 = document.createElement("img");
+  newDiv2.appendChild(image2);
+
+  const description2 = document.createElement("p");
+
+  if (string === "AP US History") {
+    image.src = "heimler.jpg";
+    image.height = 250;
+    const apushDescription = document.createTextNode("Heimler's History is a great YouTube channel that has videos on every APUSH unit!");
+    description.appendChild(apushDescription);
+    newDiv.appendChild(description);
+
+    image2.src = "princeton.jpg";
+    image2.height = 250;
+    const apushDescription2 = document.createTextNode("The APUSH Princeton Prep Book is a great resource that has infomation and lessons on all units and practice test!");
+    description2.appendChild(apushDescription2);
+    newDiv2.appendChild(description2);
+  } else if (string === "AP Computer Science Principles") {
+    image.src = "khan.png";
+    image.height = 250;
+    const cspDescription = document.createTextNode("Khan Academy has a whole review section dedicated to AP CSP. It includes lessons and questions on every unit.");
+    description.appendChild(cspDescription);
+    newDiv.appendChild(description);
+
+    image2.src = "barron.jpg";
+    image2.height = 250;
+    const cspDescription2 = document.createTextNode("The AP CSP Barron review book is a great resource that has infomation and lessons on all units and practice tests!");
+    description2.appendChild(cspDescription2);
+    newDiv2.appendChild(description2);
+  }
+}
+
+</script>
+<style>
+  body
+  {
+    --color-primary: #08a588;
+    --color-primary-dark: #04a083;
+    --color-secondary: #252c6a;
+    --color-dark: #09866f;
+    --color-error: #da2b14;
+    --color-success: #0f962c;
+    --border-radius: 4px;
+    
+    font: 500 1rem 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: var(--color-primary);
+    background-size: cover;
+    display: flex;
+  }
+  .container
+  {
+    width: auto;
+    max-width: 500px;
+    margin: 100px;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  .title
+  {
+    width: 550px;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    font-size: 15px;
+    position: absolute;
+    top: 250px;
+    right: 990px;
+    text-align: center;
+
+  }
+  .container p
+  {
+    font-size: 20px;
+  }
+
+
+  header
+  {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      padding: 1px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--color-dark);
+      backdrop-filter: blur(10px);
+  }
+
+  .logo
+{
+  max-width: 150px;
+  top: 25px;
+  margin-right: 950px;
+}
+
+  header ul
+  {
+      display: flex;
+      align-items: center;
+  }
+  
+  header ul li
+  {
+      list-style: none;
+      margin: 10 15px;
+      margin-right: 50px;
+  }
+  
+  header ul h1
+  {
+    margin-right: 1000px;
+    color: white;
+    font-weight: 70px;
+    font-size: 35px;
+  }
+  
+  header ul li a
+  {
+      text-decoration: none;
+      font-weight: 600;
+      color:black;
+      padding: 8px 20px;
+      font-size: 25px;
+      border-radius: 25px;
+      margin-bottom: 100px;
+      margin-right: 40px;
+  }
+  header ul li a:hover,
+  header ul li a.active
+  {
+      background: white;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .form__button
+  {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+  }
+  
+    </style>

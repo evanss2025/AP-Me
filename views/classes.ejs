@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>AP&Me</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="titlelogo.png">
+</head> 
+
+<body>
+  <div class="headerContainer">
+    <header>
+        <ul>
+          <li>
+            <img class="logo" src="webLogo.png" height="150px">
+          </li>
+            <li><a href="/index">Dashboard</a></li>
+            <li><a href="/flashcards">Flashcards</a></li>
+            <li><a href="/to-do">To-Do</a></li>
+            <li><a href="/classes" class="active">Classes</a></li>
+            <li><a href="/resources">Resources</a></li>
+        </ul>
+    </header>
+  </div>
+  <div class="container">
+    <h1>Classes page</h1>
+    <p id="classList"> Your Classes: </p>
+    <div class="classes">
+      <input type="checkbox" id="research" name="class" value="AP Research">
+      <label for="research">AP Research</label><br>
+      <input type="checkbox" id="seminar" name="class" value="AP Seminar">
+      <label for="seminar">AP Seminar</label><br>
+      <input type="checkbox" id="2-D design" name="class" value="AP Art and Design: 2-D Design">
+      <label for="2-D design">AP Art and Design: 2-D Design</label><br>
+      <input type="checkbox" id="3-D design" name="class" value="AP Art and Design: 3-D Design">
+      <label for="3-D design">AP Art and Design: 3-D Design</label><br>
+      <input type="checkbox" id="drawing" name="class" value="AP Art and Design: Drawing">
+      <label for="drawing">AP Art and Design: Drawing</label><br>
+      <input type="checkbox" id="artHistory" name="class" value="AP Art History">
+      <label for="artHistory">AP Art History</label><br>
+      <input type="checkbox" id="bio" name="class" value="AP Biology">
+      <label for="bio">AP Biology</label><br>
+      <input type="checkbox" id="CalcAB" name="class" value="AP Calculus AB">
+      <label for="CalcAB">AP Calculus AB</label><br>
+      <input type="checkbox" id="calcBC" name="class" value="AP Calculus BC">
+      <label for="calcBC">AP Calculus BC</label><br>
+      <input type="checkbox" id="chem" name="class" value="AP Chemistry">
+      <label for="chem">AP Chemistry</label><br>
+      <input type="checkbox" id="Chinese" name="class" value="AP Chinese Language and Culture">
+      <label for="Chinese">AP Chinese Language and Culture</label><br>
+      <input type="checkbox" id="csa" name="class" value="AP Computer Science A">
+      <label for="csa">AP Computer Science A</label><br>
+      <input type="checkbox" id="csp" name="class" value="AP Computer Science Principles">
+      <label for="csp">AP Computer Science Principles</label><br>
+      <input type="checkbox" id="English Language" name="class" value="AP English Language">
+      <label for="English Langauge">AP English Langauge</label><br>
+      <input type="checkbox" id="lit" name="class" value="AP Literature">
+      <label for="lit">AP English Literature</label><br>
+      <input type="checkbox" id="env" name="class" value="AP Environmental Science">
+      <label for="env">AP Environmental Science</label><br>
+      <input type="checkbox" id="euro" name="class" value="AP European History">
+      <label for="euro">AP European History</label><br>
+      <input type="checkbox" id="French" name="class" value="AP French">
+      <label for="French">AP French</label><br>
+      <input type="checkbox" id="german" name="class" value="AP German">
+      <label for="german">AP German</label><br>
+      <input type="checkbox" id="gov" name="class" value="AP Government and Politics - Comparative">
+      <label for="gov">AP Government and Politics - Comparative</label><br>
+      <input type="checkbox" id="gov2" name="class" value="AP Government and Politics - US">
+      <label for="gov2">AP Government and Politics - US</label><br>
+      <input type="checkbox" id="hugeo" name="class" value="AP Human Geography">
+      <label for="hugeo">AP Human Geography</label><br>
+      <input type="checkbox" id="Italian" name="class" value="AP Italian">
+      <label for="Italian">AP Italian</label><br>
+      <input type="checkbox" id="Japanese" name="class" value="AP Japanese">
+      <label for="Japanese">AP Japanese</label><br>
+      <input type="checkbox" id="Latin" name="class" value="AP Latin">
+      <label for="Latin">AP Latin</label><br>
+      <input type="checkbox" id="macro" name="class" value="AP Macronomics">
+      <label for="macro">AP Macronomics</label><br>
+      <input type="checkbox" id="mircro" name="class" value="AP Micronomics">
+      <label for="mircro">AP Micronomics</label><br>
+      <input type="checkbox" id="music" name="class" value="AP Music Theory">
+      <label for="music">AP Music Theory</label><br>
+      <input type="checkbox" id="physics1" name="class" value="AP Physics 1: Algebra-Based">
+      <label for="physics1">AP Physics 1: Algebra-Based</label><br>
+      <input type="checkbox" id="physics2" name="class" value="AP Physics 2: Algebra-Based">
+      <label for="physics2">AP Physics 2: Algebra-Based</label><br>
+      <input type="checkbox" id="physicsC" name="class" value="AP Physics C: Electricity and Magnetism">
+      <label for="physicsC">AP Physics C: Electricity and Magnetism</label><br>
+      <input type="checkbox" id="physicsC2" name="class" value="AP Physics C: Mechananics">
+      <label for="physicsC2">AP Physics C: Mechananics</label><br>
+      <input type="checkbox" id="Psy" name="class" value="AP Psychology">
+      <label for="Psy">AP Psychology</label><br>
+      <input type="checkbox" id="spanish" name="class" value="AP Spanish">
+      <label for="spanish">AP Spanish</label><br>
+      <input type="checkbox" id="spanishlit" name="class" value="AP Spanish Literature">
+      <label for="spanishlit">AP Spanish Literature</label><br>
+      <input type="checkbox" id="stats" name="class" value="AP Statistics">
+      <label for="stats">AP Statistics</label><br>
+      <input type="checkbox" id="apush" name="class" value="AP US History">
+      <label for="apush">AP US History</label><br>
+      <input type="checkbox" id="world" name="class" value="AP World History - Modern">
+      <label for="world">AP World History - Modern</label><br>
+      
+    </div>
+    <button id="btn" onclick="change_text()" class="form__button">Add classes</button>
+
+  </div>
+</body>
+
+<style>
+  body
+  {
+    --color-primary: #08a588;
+    --color-primary-dark: #04a083;
+    --color-secondary: #252c6a;
+    --color-dark: #09866f;
+    --color-error: #da2b14;
+    --color-success: #0f962c;
+    --border-radius: 4px;
+    
+    font: 500 1rem 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: var(--color-primary);
+    background-size: cover;
+  }
+  .container
+  {
+    width: 900px;
+    max-width: 900px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #fff;
+  }
+  header
+  {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      padding: 1px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--color-dark);
+      backdrop-filter: blur(10px);
+  }
+
+  .logo
+{
+  max-width: 150px;
+  top: 25px;
+  margin-right: 950px;
+}
+
+  header ul
+  {
+      display: flex;
+      align-items: center;
+  }
+  
+  header ul li
+  {
+      list-style: none;
+      margin: 10 15px;
+      margin-right: 50px;
+  }
+  
+  header ul h1
+  {
+    margin-right: 1000px;
+    color: white;
+    font-weight: 70px;
+    font-size: 35px;
+  }
+  
+  header ul li a
+  {
+      text-decoration: none;
+      font-weight: 600;
+      color:black;
+      padding: 8px 20px;
+      font-size: 25px;
+      border-radius: 25px;
+      margin-bottom: 100px;
+      margin-right: 40px;
+  }
+  header ul li a:hover,
+  header ul li a.active
+  {
+      background: white;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .classes
+  {
+    overflow: scroll;
+    max-height: 300px;
+  }
+  .form__button
+  {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+  }
+
+  #classList
+  {
+    background-color: #b1ffee;
+    border-radius: var(--border-radius);
+  }
+  .form__button:hover
+  {
+    background-color: var(--color-dark);
+  }
+</style>
+
+<script>
+  const btn = document.querySelector('#btn');
+   btn.addEventListener('click', (event) => {
+    let checkboxes = document.querySelectorAll('input[name="class"]:checked');
+    const values = [];
+    checkboxes.forEach((checkbox) => {
+      values.push(checkbox.value);
+    });
+    document.getElementById("classList").innerHTML = "Your Classes: " + values;
+    localStorage.setItem('classes', values);
+  });
+
+  const classesValue = localStorage.getItem('classes');
+  document.getElementById("classList").innerHTML = "Your Classes: " + classesValue;
+</script>
